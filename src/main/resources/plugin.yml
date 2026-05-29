@@ -1,0 +1,6 @@
+name: LegacyWorldNames
+main: dev.lumas.world.LegacyWorldNames
+version: 1.0-SNAPSHOT
+api-version: 1.21
+load: STARTUP
+folia-supported: true
