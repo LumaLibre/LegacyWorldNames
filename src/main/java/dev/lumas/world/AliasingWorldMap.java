@@ -73,13 +73,16 @@ public final class AliasingWorldMap implements Map<String, World> {
         return alt != null && this.delegate.containsKey(alt);
     }
 
-    @Override public int size() {
+    @Override
+    public int size() {
         return this.delegate.size();
     }
-    @Override public boolean isEmpty() {
+    @Override
+    public boolean isEmpty() {
         return this.delegate.isEmpty();
     }
-    @Override public boolean containsValue(Object value) {
+    @Override
+    public boolean containsValue(Object value) {
         return this.delegate.containsValue(value);
     }
 
@@ -106,7 +109,8 @@ public final class AliasingWorldMap implements Map<String, World> {
         return removed;
     }
 
-    @Override public void putAll(Map<? extends String, ? extends World> m) {
+    @Override
+    public void putAll(Map<? extends String, ? extends World> m) {
         for (Entry<? extends String, ? extends World> e : m.entrySet()) {
             put(e.getKey(), e.getValue());
         }
@@ -119,22 +123,28 @@ public final class AliasingWorldMap implements Map<String, World> {
         this.resolvedOnce.clear();
     }
 
-    @Override public Set<String> keySet() {
+    @Override
+    public Set<String> keySet() {
         return this.delegate.keySet();
     }
-    @Override public Collection<World> values() {
+    @Override
+    public Collection<World> values() {
         return this.delegate.values();
     }
-    @Override public Set<Entry<String, World>> entrySet() {
+    @Override
+    public Set<Entry<String, World>> entrySet() {
         return this.delegate.entrySet();
     }
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         return this.delegate.equals(o);
     }
-    @Override public int hashCode() {
+    @Override
+    public int hashCode() {
         return this.delegate.hashCode();
     }
-    @Override public String toString() {
+    @Override
+    public String toString() {
         return this.delegate.toString();
     }
 
